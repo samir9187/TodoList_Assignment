@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(42, 41, 41);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-dark-custom {
+  background-color: #343a40 !important;
+  /* Custom dark background */
+  color: #ffffff;
+  /* Custom text color */
+}
+
+.text-light-custom {
+  color: #ffffff !important;
+  /* Custom light text color */
+}
+
+.text-green-custom {
+  color: #28a745 !important;
+  /* Green text color */
+}
+
+.form-label-green {
+  color: #28a745;
+  /* Green color for form labels */
+}
+
+/* Add these styles to support dragging effects */
+.todo-list-item {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list-item.dragging {
+  background-color: #e0e0e0;
+  border: 1px solid #bbb;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list {
+  /* background-color: #fff; */
+  padding: 8px;
+  border-radius: 4px;
+  min-height: 100px;
+}
+
+.todo-input-item {
+  margin-bottom: 12px;
+}
+
+.todo-input input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+.primaryBtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.secondaryBtn {
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.secondaryBtn.active {
+  background-color: #007bff;
+  color: #fff;
+}
