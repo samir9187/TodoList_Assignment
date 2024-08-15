@@ -10,28 +10,10 @@ dotenv.config();
 
 const app = express();
 
-// app.use(
-// cors({
-//   origin: "http://localhost:5173/",
-//   methods: ["GET", "POST", "PUT", "DELETE"],
-//   credentials: true,
-// })
-// );
-// app.use(cors());
-// Define allowed origins
-const allowedOrigins = ["https://todo-list-fireai.netlify.app/"];
-
-// Configure CORS middleware
 app.use(
   cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    origin: "https://todo-list-fireai.netlify.app/",
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
