@@ -12,8 +12,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://todo-list-fireai.netlify.app/",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: "https://todo-list-fireai.netlify.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    allowedHeaders: "Content-Type, Authorization",
     credentials: true,
   })
 );
