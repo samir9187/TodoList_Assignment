@@ -19,7 +19,7 @@ const app = express();
 // );
 // app.use(cors());
 // Define allowed origins
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["https://todo-list-fireai.netlify.app/"];
 
 // Configure CORS middleware
 app.use(
